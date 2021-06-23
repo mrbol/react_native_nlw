@@ -5,28 +5,28 @@ import { Avatar } from '../Avatar';
 import { styles } from './styles';
 
 export function Profile() {
-    return (
-        <View style={styles.container}>
+  return (
+    <View style={styles.container}>
 
-            <Avatar urlImage="https://avatars.githubusercontent.com/u/5992873?v=4" />
+      <Avatar urlImage="https://avatars.githubusercontent.com/u/5992873?v=4" />
 
-            <View>
-                <View style={styles.user}>
-                    <Text style={styles.greeting}>
-                        Olá,
-                    </Text>
+      <View>
+        <View style={styles.user}>
+          <Text style={styles.greeting}>
+            Olá,
+          </Text>
 
-                    <Text style={styles.username}>
-                        Waldiney
-                    </Text>
-                </View>
-
-                <Text style={styles.message}>
-                    Hoje é dia de vitória
-                </Text>
-            </View>
-
+          <Text style={styles.username}>
+            Waldiney
+          </Text>
         </View>
-    )
+
+        <Text style={styles.message}>
+          Hoje é dia de vitória
+        </Text>
+      </View>
+
+    </View>
+  )
 
 }
