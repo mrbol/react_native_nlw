@@ -11,7 +11,7 @@ type Props = {
   handleGuildSelect: (guild: GuildProps) => void;
 }
 
-export function Guilds({ handleGuildSelect }: Props){
+export function Guilds({ handleGuildSelect }: Props) {
   const guilds = [
     {
       id: '1',
@@ -25,21 +25,44 @@ export function Guilds({ handleGuildSelect }: Props){
       icon: 'image.png',
       owner: true
     }
+    ,
+    {
+      id: '3',
+      name: 'Galera do Game',
+      icon: 'image.png',
+      owner: true
+    },
+
+    {
+      id: '4',
+      name: 'Galera do Game',
+      icon: 'image.png',
+      owner: true
+    },
+
+    {
+      id: '5',
+      name: 'Galera do Game',
+      icon: 'image.png',
+      owner: true
+    }
   ];
 
   return (
     <View style={styles.container}>
-      <FlatList 
+      <FlatList
         data={guilds}
         keyExtractor={item => item.id}
         renderItem={({ item }) => (
-          <Guild 
-            data={item} 
+          <Guild
+            data={item}
             onPress={() => handleGuildSelect(item)}
           />
-        )}    
+        )}
         showsVerticalScrollIndicator={false}
-        ItemSeparatorComponent={() => <ListDivider />}
+        ItemSeparatorComponent={() => <ListDivider isCentered />}
+        ListHeaderComponent={() => <ListDivider isCentered />}
+        contentContainerStyle={{ paddingBottom: 68, paddingTop: 103 }}
         style={styles.guilds}
       />
     </View>
