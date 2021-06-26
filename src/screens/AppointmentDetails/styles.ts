@@ -9,7 +9,6 @@ export const styles = StyleSheet.create({
   banner: {
     width: '100%',
     height: 234,
-
   },
   bannerContent: {
     flex: 1,
@@ -36,5 +35,12 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 24,
     paddingVertical: 20,
     marginBottom: getBottomSpace(),
+  },
+  emptyContainer: {
+    alignItems: 'center',
+  },
+  emptyText: {
+    fontFamily: theme.fonts.text500,
+    color: theme.colors.heading
   }
 });

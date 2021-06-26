@@ -1,9 +1,9 @@
 import React from 'react';
-import {
-  TouchableOpacity,
-  TouchableOpacityProps,
-  Text,
-  View
+import { 
+  TouchableOpacity, 
+  TouchableOpacityProps, 
+  Text, 
+  View 
 } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 
@@ -23,32 +23,32 @@ type Props = TouchableOpacityProps & {
   data: GuildProps;
 }
 
-export function Guild({ data, ...rest }: Props) {
+export function Guild({data, ...rest}: Props){
   return (
     <TouchableOpacity
       style={styles.container}
       activeOpacity={0.7}
       {...rest}
     >
-      <GuildIcon />
+        <GuildIcon guildId={data.id} iconId={data.icon} />
 
-      <View style={styles.content}>
-        <View>
-          <Text style={styles.title}>
-            {data.name}
-          </Text>
+        <View style={styles.content}>
+          <View>
+            <Text style={styles.title}>
+              {data.name}
+            </Text>
 
-          <Text style={styles.type}>
-            {data.owner ? 'Administrador' : 'Convidado'}
-          </Text>
+            <Text style={styles.type}>
+              { data.owner ? 'Administrador' : 'Convidado'}
+            </Text>
+          </View>
         </View>
-      </View>
 
-      <Feather
-        name="chevron-right"
-        color={theme.colors.heading}
-        size={24}
-      />
+        <Feather 
+          name="chevron-right"
+          color={theme.colors.heading}
+          size={24}        
+        />
     </TouchableOpacity>
   );
 }
