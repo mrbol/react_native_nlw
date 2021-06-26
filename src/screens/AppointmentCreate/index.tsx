@@ -98,6 +98,15 @@ export function AppointmentCreate() {
       return false;
     }
 
+    if (!minute) {
+      Alert.alert('Validação', 'Por favor informe o minuto', [{
+        text: 'OK',
+        style: 'cancel'
+      }])
+
+      return false;
+    }
+
     if (!description) {
       Alert.alert('Validação', 'Por favor informe o descrição', [{
         text: 'OK',
