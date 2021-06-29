@@ -39,6 +39,7 @@ export function Home() {
     const response = await AsyncStorage.getItem(COLLECTION_APPOINTMENTS);
     const storage: AppointmentProps[] = response ? JSON.parse(response) : [];
 
+
     if (category) {
       setAppointments(storage.filter(item => item.category === category));
     } else {
