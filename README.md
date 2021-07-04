@@ -61,3 +61,5 @@ RESPONSE_TYPE=
 CLIENT_ID=
 CDN_IMAGE=
 ```
+Exemplo como configurar REDIRECT_URI em https://waldiney-romero.tumblr.com/post/654891315848478720/1-comentar-o-codigo-que-est%C3%A1-apptsx-2
+
