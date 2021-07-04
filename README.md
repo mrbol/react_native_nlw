@@ -1,6 +1,3 @@
-<h1 align="center">
-  <img alt="GamePlay" height="80" title="Plant Manager" src=".github/logo.png" />
-</h1>
 
 ![cover](assets/cover.png?style=flat)
 
@@ -44,7 +41,7 @@ Aplicativo para lhe ajudar a conectar-se e organiza o momento de diversão e jog
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/0kv33XYjvOgvKGKHBaiR07/GamePlay-NLW-Together?node-id=58913%3A83). É necessário ter conta no [Figma](http://figma.com/) para acessá-lo.
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/0kv33XYjvOgvKGKHBaiR07/GamePlay-NLW-Together). É necessário ter conta no [Figma](http://figma.com/) para acessá-lo.
 
 
 ## Executando o projeto
