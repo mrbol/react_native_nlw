@@ -36,7 +36,6 @@ Aplicativo para lhe ajudar a conectar-se e organiza o momento de diversão e jog
 -   [ ] React Native Gesture Handler
 -   [ ] Expo Authentication
 -   [ ] React Native Share
--   [ ] Deep Link
 
 
 ## 🔖 Layout
